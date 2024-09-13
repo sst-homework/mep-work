@@ -1,0 +1,204 @@
+/* Base Styles */
+body {
+    font-family: 'Georgia', serif; /* Elegant serif font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f5f0; /* Soft, light beige */
+}
+
+header {
+    background: #00d719; /* Deep red, often associated with Italian elegance */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #33ea00; /* Slightly darker red for a classic touch */
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Georgia', serif; /* Stylish font for headers */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #430148; /* Light beige to contrast with red */
+    text-decoration: none;
+    font-weight: bold; /* Adds a bit of elegance */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #3a003a; /* A warm, golden color on hover */
+}
+
+main {
+    padding: 30px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #2C3E50; /* Dark grey for a sophisticated look */
+    font-family: 'Georgia', serif; /* Consistent with header font */
+}
+
+article {
+    margin-bottom: 30px;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Adds a touch of classic style */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a refined look */
+}
+
+ul {
+    padding-left: 20px;
+}
+
+footer {
+    background: #C8102E; /* Matching the header */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 5px solid #B03A2E; /* Matching border for consistency */
+}
+
+/* Forms */
+form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd; /* Soft border */
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Georgia', serif;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+form button {
+    background-color: #C8102E;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Georgia', serif;
+}
+
+form button:hover {
+    background-color: #A60D1C; /* Slightly darker red */
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    border: 1px solid #ffebbc;
+    text-align: left;
+}
+
+table th {
+    background-color: #f9c89c; /* Light beige */
+    color: #333;
+}
+
+/* Buttons */
+button,
+a.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #41c810;
+    color: #2ccd27;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Georgia', serif;
+}
+
+button:hover,
+a.button:hover {
+    background-color: #09e343;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 12px;
+    }
+
+    header, footer {
+        text-align: center;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 15px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 14px;
+    }
+
+    button,
+    a.button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
